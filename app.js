@@ -188,7 +188,7 @@
   function renderColors() {
     $("#swatches").innerHTML = K.warna.map(function (w) {
       return '<label class="swatch"><input type="radio" name="warna" value="' + w.id + '" aria-label="' + esc(w.nama) + '">' +
-        '<span class="swatch__img"><img src="assets/img/warna/' + w.id + '.webp" width="375" height="215" alt="" loading="lazy"></span>' +
+        '<span class="swatch__img"><img src="' + w.id + '.webp" width="375" height="215" alt="" loading="lazy"></span>' +
         '<span class="swatch__name"><i style="background:' + w.hex + '"></i>' + esc(w.nama) + "</span></label>";
     }).join("");
     $("#swatches").addEventListener("change", function (e) { if (e.target.name === "warna") setWarna(e.target.value); });
@@ -207,7 +207,7 @@
     state.warna = id;
     $$("input[name=warna]").forEach(function (i) { i.checked = i.value === id; });
     var img = $("#colorImg");
-    img.src = "assets/img/warna/" + id + ".webp";
+    img.src = ""+id + ".webp";
     img.alt = "Contoh trailer warna " + w.nama;
     $("#colorName").textContent = w.nama;
     $("#colorChip").style.background = w.hex;
@@ -324,7 +324,7 @@
     var row = function (a, b, cls) { return "<tr" + (cls ? ' class="' + cls + '"' : "") + "><td>" + esc(a) + "</td><td>" + esc(b) + "</td></tr>"; };
     var who = [x.nama, x.kota].filter(Boolean).join(", ");
     $("#printSheet").innerHTML =
-      '<header><img src="assets/img/logo.png" alt=""><div><h1>CV. Rezky Abadi Karoseri</h1>' +
+      '<header><img src="logo.png" alt=""><div><h1>CV. Rezky Abadi Karoseri</h1>' +
       '<div class="muted">' + esc(K.kontak.alamat) + "<br>WhatsApp " + esc(K.kontak.nama) + ": " + esc(K.kontak.whatsappTampil) + " | " + esc(K.kontak.email) + "</div></div></header>" +
       "<h2>Estimasi biaya trailer</h2>" +
       '<p class="muted">Tanggal: ' + esc(today()) + (who ? "<br>Untuk: " + esc(who) : "") + "</p>" +

@@ -37,7 +37,7 @@ window.KATALOG = {
       ukuran: 20,
       tipe: "Rangka",
       deskripsi: "Rangka besi terbuka untuk kontainer 20 feet. Ringan, efisien, tetap kokoh menahan beban jalan.",
-      gambar: "assets/img/20ft-rangka",
+      gambar: "20ft-rangka",
       harga: { velg: 163500000, vulkanisir: 181600000, asli: 201750000 },
       spek: {
         frame: "IWF 450 mm",
@@ -62,7 +62,7 @@ window.KATALOG = {
       ukuran: 20,
       tipe: "Plat",
       deskripsi: "Lantai pelat bordes penuh 20 feet, siap membawa muatan curah maupun kontainer.",
-      gambar: "assets/img/20ft-plat",
+      gambar: "20ft-plat",
       harga: { velg: 180500000, vulkanisir: 198600000, asli: 218750000 },
       spek: {
         frame: "IWF 450 mm",
@@ -87,7 +87,7 @@ window.KATALOG = {
       ukuran: 40,
       tipe: "Rangka",
       deskripsi: "Rangka panjang untuk kontainer 40 feet dengan 3 sumbu roda agar beban lebih merata.",
-      gambar: "assets/img/40ft-rangka",
+      gambar: "40ft-rangka",
       harga: { velg: 225500000, vulkanisir: 251650000, asli: 280750000 },
       spek: {
         frame: "IWF 450 mm",
@@ -112,7 +112,7 @@ window.KATALOG = {
       ukuran: 40,
       tipe: "Plat",
       deskripsi: "Lantai pelat bordes penuh 40 feet dengan 3 sumbu roda, untuk muatan panjang dan berat.",
-      gambar: "assets/img/40ft-plat",
+      gambar: "40ft-plat",
       harga: { velg: 262500000, vulkanisir: 288650000, asli: 317750000 },
       spek: {
         frame: "IWF 450 mm",
